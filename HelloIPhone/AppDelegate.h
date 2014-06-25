@@ -9,7 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    UILabel *display;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (retain, nonatomic) IBOutlet UILabel *display;
+
+- (IBAction) click: (id)sender;
 
 @end
